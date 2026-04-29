@@ -77,3 +77,6 @@ Each `@mcp.tool` function maps to one REST endpoint:
 | POST        | Tool that creates a resource |
 | PATCH / PUT | Tool that updates a resource |
 | DELETE      | Tool that removes a resource |
+
+
+Adding dummy text to test out webhook and pipeline triggering.
