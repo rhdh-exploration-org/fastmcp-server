@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: fastmcp-server
+  description: A FastMCP server that wraps a REST API as MCP tools.
+  annotations:
+    github.com/project-slug: rhdh-exploration-org/fastmcp-server
+    tektonci/build-namespace: mcp-servers
+    janus-idp.io/tekton: fastmcp-server-ci-cd
+  links:
+  - title: Open in Dev Spaces (VS Code)
+    # Constructing the Factory URL
+    # Assuming your devspaces host is something like devspaces.apps.cluster...
+    # url: https://devspaces./#
+    url: https://devspaces.apps.cluster-dzdrz.dzdrz.sandbox3547.opentlc.com/#https://github.com/rhdh-exploration-org/fastmcp-server
+    icon: web
+spec:
+  type: service
+  lifecycle: dev
+  owner: "user:default/fgharo"
